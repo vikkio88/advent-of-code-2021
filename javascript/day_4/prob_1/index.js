@@ -4,7 +4,7 @@ const input = './data/input.in';
 
 const loadGame = filename => {
 
-    const data = fs.readFileSync(input, 'utf-8');
+    const data = fs.readFileSync(filename, 'utf-8');
     const lines = data.split(/\r?\n/);
 
     const drawn = lines.shift().trim().split(',');
